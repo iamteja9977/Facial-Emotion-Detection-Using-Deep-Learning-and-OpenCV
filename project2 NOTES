@@ -1,0 +1,30 @@
+streamlit: Used to create a web app interface. Streamlit is a popular Python library for building data science web apps.
+
+cv2: This is OpenCV, a powerful library for computer vision tasks, like image processing and facial recognition.
+
+keras.models.load_model: Function to load a pre-trained Keras model. Here, it's used to load the emotion detection model.
+
+numpy: A library for numerical computations, especially for working with arrays and matrices.
+
+
+Loads the pre-trained emotion detection model from the file 'emotion_model.h5'. This file should contain a neural network trained to recognize emotions from facial expressions.
+
+
+Resizes the face region to 48x48 pixels (the expected input size for the model).
+Normalizes pixel values to the range [0, 1].
+Reshapes the image to the required shape (1, 48, 48, 1) for model input.
+
+Install Required Packages:
+
+pip install streamlit opencv-python keras numpy
+
+pip install tensorflow
+ 		because the Keras library is built on top of TensorFlow, and it requires TensorFlow to be installed in your environment. 
+Installing collected packages: tensorflow
+Successfully installed tensorflow-2.17.0
+
+then run
+
+streamlit run app.py
+
+
